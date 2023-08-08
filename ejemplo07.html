@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        let vector = [2, 40, 20, "Denny", true]
+
+
+        console.log("Tamaño del vector: " + vector.length)
+
+        //console.log(vector)
+        for(let i = 0; i < vector.length; i++){
+            //console.log("Posicion: " + i + ": " + vector[i])
+            console.log(`Posicion: ${i+1} : ${vector[i]}`)
+        }
+
+        console.log(vector[4])
+
+        console.log("Vector descendente")
+        for(let i = vector.length-1; i >= 0; i--){
+            console.log(`Posicion: ${i+1} : ${vector[i]}`)
+        }
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

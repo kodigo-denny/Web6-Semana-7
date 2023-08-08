@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        let notas = [], acu = 0
+
+        for(let i = 0; i < 10; i++){
+            do{
+                notas[i] = Number(prompt(`Ingrese la nota del estudiante numero: ${i+1}`))
+                if(notas[i]<0 || notas[i]>10)
+                    alert("La nota ingresada no es correcta")
+            }while(notas[i]<0 || notas[i]>10)
+            acu = acu + notas[i]
+        }
+
+        console.log(notas)
+        console.log(acu)
+
+        console.log("El promedio de los alumnos es: " + acu / notas.length)
+        console.log("Historico de notas")
+
+        let j = 0
+
+        while(j < notas.length){
+            console.log(`La nota del estudiante numero: ${j+1} es: ${notas[j]}`)
+            j++
+        }
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
