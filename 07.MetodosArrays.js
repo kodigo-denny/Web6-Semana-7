@@ -1,12 +1,14 @@
 //METODOS DE LOS ARRAYS 
 
 let frutas=['sandia',
+              'uva',
               'manzana',
               'pera',
               'melon',
               'uva',
               'sandia',
-              'banana'
+              'banana',
+              'uva'
             ]
 const verduras=['lechuga',
                 'pepino',
@@ -117,106 +119,112 @@ const empresa=[
 //INCLUDES:Nos da true o false en función si 
 //existe ese elemento del array 
 
- console.log(frutas.includes('banana'))
+ //console.log(frutas.includes('banana'))
 
 //INDEXOF:Nos devuelve un numero negativo si no 
 //encuentra el elemento en el array y si lo 
 //encuentra nos dice la posición que ocupa 
 
-// console.log(frutas.indexOf('uva'))
+ //console.log(frutas.indexOf('uva'))
 
 
 //JOIN:Nos separa los elementos del array según 
 //le indiquemos 
 
-// console.log(frutas.join('-'))
+ //console.log(frutas.join(';'))
 
 //LASTINDEXOF 
 
-// console.log(frutas.lastIndexOf('sandia'))
+ //console.log(frutas.lastIndexOf('sandia'))
 
 //LENGTH(propiedad)
-
-// let casa="chalet"
-// console.log(frutas.length)
-// console.log(casa.length)
+/*
+ let casa="chalet"
+ console.log(frutas.length)
+ console.log(casa.length)
+ */
 
 //MAP: nos itera arrays y arrays de objetos 
 // y nos devuelve un array 
 
+/*
+ empresa.map(em=>{
+     document.body.innerHTML+=`
+    
+      <ul> 
+         <li>
+            Id:${em.id}<br>
+            Nombre:${em.nombre}<br>
+            Apellidos:${em.apellidos}<br>
+            Edad:${em.edad}
 
-// empresa.map(em=>{
-//     document.body.innerHTML+=`
-    
-//      <ul> 
-//         <li>
-//            Id:${em.id}<br>
-//            Nombre:${em.nombre}<br>
-//            Apellidos:${em.apellidos}<br>
-//            Edad:${em.edad}
+         </li>
 
-//         </li>
-
-//      <ul>
-    
-    
-    
-//     `
-// })
+      <ul>
+  `
+ })
+ */
 
 //POP:Elimina el último elemento de un array  
 // y nos lo devuelve 
-
-// console.log(frutas.pop())
-// console.log(frutas)
-
+/*
+ console.log(frutas.pop())
+ console.log(frutas.pop())
+ console.log(frutas)
+*/
 //PUSH:Agrega al final del array el nuevo elemento 
 //que le indiquemos y nos devuelve la longitud 
 //del array con el nuevo elemento 
-
-// console.log(frutas.push('fresa'))
-// console.log(frutas)
-
+/*
+ console.log(frutas.push('fresa'))
+ console.log(frutas)
+*/
 
 //REDUCE: Reduce el array a un solo elemento 
-
-//  frutas.reduce(fruta=>{
-//      console.log(fruta)
-//  })
+/*
+  frutas.reduce(fruta=>{
+      console.log(fruta)
+  })
+  */
 
 //REVERSE:Nos devuelve el array invertido  
 
 // console.log(frutas.reverse())
+ 
 
 //SLICE:Nos devuelve los indices comprendidos 
 //entre el primer indice que le indiquemos y 
 //el segundo no incluido 
 
-// console.log(frutas.slice(1,4))
+ //console.log(frutas.slice(1,5))
 
 //SORT:Nos ordena el array alfabeticamente 
 
-// console.log(frutas.sort())
+ //console.log(frutas.sort()) // Ascendente
 
+ //console.log(frutas.sort().reverse()) // Descendente
+//console.log(frutas)
 
 //UNSHIFT:Nos agrega al principio del array el
 //elemento que le indiquemos  
 
-// console.log(frutas.unshift('mango'))
-// console.log(frutas)
+/*
+ console.log(frutas.unshift('mango'))
+ console.log(frutas)
 
 //SHIFT:Nos elimina el primer elemento del array 
 
-// console.log(frutas.shift())
-// console.log (frutas)
-
+ console.log(frutas.shift())
+ console.log (frutas)
+*/
 
 //SPLICE:Nos da los elementos entre dos indices pero  
 //1.ponemos desde donde queremos que empieze a contar. 
 //2.cuantos elementos va a eliminar o sumar 
 //3.y  si va a sumar los que vaya a añadir 
 
-// frutas.splice(0,4,'mango')
-// frutas.splice(0,0,'aguacate','kiwi')
+ //frutas.splice(0,4,'mango')
+ //frutas.splice(0,0,'aguacate','kiwi')
+ //frutas.splice(5,1)
 
-// console.log(frutas)  
+ //console.log(frutas)  
